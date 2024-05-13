@@ -1,10 +1,45 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Portifolio Filipe Magalhães";
+    
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<center style="width: 1520px;">
+    <section class="d-flex flex-wrap justify-content-around align-items-center p-2" style="height: 750px;">
+        <container-texts class="">
+            <texts class=" azul-pastel text-center">
+                <h1 class="display-4">Olá mundo, me chamo</h1>
+                <h1 class="display-4 salmao">Filipe Magalhães</h1>
+                <h2>Desenvolvedor Back-End</h2>
+            </texts>
+            <icons style="width: 200px;" class="d-flex justify-content-around">
+                <a href="https://github.com/FMagalhaess" target="_blank" class="text-white">
+                    <span class="bi--github"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/filipemagalhaesdev/" target="_blank" class="text-white">
+                    <span class="bi--linkedin"></span>
+                </a>
+            </icons>
+        </container-texts>
+        <div>
+            <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/123377601?v=4" alt="Desenvolvedor" class="img-fluid" />
+        </div>
+        <container class="align-self-end" style="width: 2200px">
+            <span class="circle-with-arrows d-flex flex-column flex-wrap salmao-bg circle" >
+                <span class="iconamoon--arrow-up-2"></span>
+            </span>
+        </container>
+    </section>
+    <section class=" d-flex flex-column">
+        <div class="triangle"></div>
+        <div class="d-flex flex-wrap justify-content-around align-items-center p-2">
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="salmao">Sobre mim</h2>
+                <p class="text-justify">Sou um desenvolvedor back-end, apaixonado por tecnologia e programação. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São Paulo (FATEC-SP). Tenho experiência com desenvolvimento de aplicações web, utilizando tecnologias como C#, .NET Core, Entity Framework Core, SQL Server, HTML, CSS, JavaScript, Bootstrap, Git e GitHub.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="salmao">Habilidades</h2>
+            </div>
+    </section>
+</center>
