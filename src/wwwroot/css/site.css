@@ -65,10 +65,38 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m17 14l-5-5m0 0l-5 5'/%3E%3C/svg%3E");
   rotate: 180deg;
 }
-.triangle {
-  width: 100%;
-  height: 80px;
-  background: #FF7570;
-  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-  rotate: 180deg;
+.projeto{
+  height: 450px;
+  width: 350px;
+  background-color: #7075FF;
+  border-radius: 5px;
+}
+.projeto-thumb{
+  margin-top: -22px;
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+
+}
+.titulo-projeto{
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.descricao-projeto{
+  font-size: 14px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.stacks-principais{
+  margin-top: 10px;
+  width: 320px;
+}
+.stack-holder{
+  height: 100px;
+  width: 100px;
+}
+.card-projeto{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
