@@ -2,11 +2,17 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Portifolio Filipe Magalhães";
-    
 }
-
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>    
 <center style="width: 1520px;">
-    <section class="d-flex flex-wrap justify-content-around align-items-center p-2" style="height: 800px;">
+    <section class="d-flex flex-wrap justify-content-around align-items-center p-2" style="height: 740px;">
         <container-texts class="">
             <texts class=" azul-pastel text-center">
                 <h1 class="display-4">Olá mundo, me chamo</h1>
@@ -26,21 +32,10 @@
             <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/123377601?v=4" alt="Desenvolvedor" class="img-fluid" />
         </div>
         <container class="align-self-end" style="width: 2200px">
-            <span class="circle-with-arrows d-flex flex-column flex-wrap salmao-bg circle" >
-                <span class="iconamoon--arrow-up-2"></span>
-            </span>
+                <span class="container-circle circle-with-arrows d-flex flex-column flex-wrap salmao-bg circle" >
+                    <span class="iconamoon--arrow-up-2"></span>
+                </span>
         </container>
-    </section>
-    <section class=" d-flex flex-column">
-        <div class="losango"></div>
-        <div class="d-flex flex-wrap justify-content-around align-items-center p-2">
-            <div class="d-flex flex-column align-items-center">
-                <h2 class="salmao">Sobre mim</h2>
-                <p class="text-justify">Sou um desenvolvedor back-end, apaixonado por tecnologia e programação. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de São Paulo (FATEC-SP). Tenho experiência com desenvolvimento de aplicações web, utilizando tecnologias como C#, .NET Core, Entity Framework Core, SQL Server, HTML, CSS, JavaScript, Bootstrap, Git e GitHub.</p>
-            </div>
-            <div class="d-flex flex-column align-items-center">
-                <h2 class="salmao">Habilidades</h2>
-            </div>
     </section>
     <section class="d-flex flex-wrap flex-column justify-content-around align-items-center p-2">
         <div class="d-flex flex-column align-items-center">
@@ -48,7 +43,7 @@
         </div>
         <div class="d-flex" style="width: 100vh;">
         <projetos-totais class="d-flex flex-wrap">
-        @for (int i = 0; i < 3; i++)
+        @foreach (var projeto in Model.Projetos)
         {
         <div class="d-flex card-projeto">
         <projeto class="d-flex flex-column align-items-center justify-content-center projeto">
@@ -75,7 +70,7 @@
             </div>
         </projeto>
         <content class="d-flex flex-column">
-            <p class="align-self-start titulo-projeto">Projeto</p>
+            <p class="align-self-start titulo-projeto">@projeto.Nome</p>
             <p class="align-self-start descricao-projeto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet ultricies tincidunt. Aliquam erat volutpat. Sed faucibus nec enim et ultrices. Quisque rhoncus pretium congue. Suspendisse ultrices dolor non euismod scelerisque. In dui diam, ultricies non feugiat vel, ultricies ac urna. Vivamus placerat rutrum lacus sed posuere. Donec vestibulum molestie ligula, sed lacinia nulla venenatis ac. Cras imperdiet consequat ligula non pulvinar. Nulla sit amet enim condimentum, vestibulum elit at, auctor sem. Sed magna eros, venenatis at eleifend in, sodales in justo. Aliquam non orci et sapien dignissim blandit. Integer et dolor diam. Sed facilisis ut leo id semper. Integer ac nisl nibh. Fusce sem nunc, ultricies quis diam id, sollicitudin fringilla turpis.</p>
         </content>
         </div>
@@ -84,4 +79,18 @@
         </projetos-totais>
         </div>
     </section>
+    <section class=" d-flex flex-column">
+        <div class="losango"></div>
+        <div class="d-flex flex-wrap justify-content-around align-items-center p-2">
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="salmao">Sobre mim</h2>
+                <p class="text-justify">Sou um desenvolvedor back-end, com experiência em C#, bancos de dados (SQL Server, MySql).
+                    Tenho experiência com desenvolvimento de aplicações web, utilizando tecnologias como C#, 
+                    .NET Core, Entity Framework Core, SQL Server, HTML, CSS, JavaScript, Bootstrap, Git e GitHub.</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="salmao">Habilidades</h2>
+            </div>
+    </section>
 </center>
+</body>
