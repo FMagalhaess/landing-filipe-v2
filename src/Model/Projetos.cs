@@ -6,6 +6,16 @@ namespace Model
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public string Imagem { get; set; }
-        public List<Stacks> PrincipalStacks { get; set; }
+        public List<String> PrincipalStacks { get; set; }
+        public List<Icon> NormalStacks { get; set; }
+    }
+    public class ProjetoPronto
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Descricao { get; set; }
+        public string Imagem { get; set; }
+        public List<Icon> PrincipalStacks { get; set; }
+        public List<Icon> NormalStacks { get; set; }
     }
 }

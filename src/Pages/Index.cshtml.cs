@@ -7,7 +7,7 @@ namespace src.Pages;
 
 public class IndexModel : PageModel
 {
-    public List<Projeto> Projetos { get; set; }
+    public List<ProjetoPronto> Projetos { get; set; }
     private readonly ILogger<IndexModel> _logger;
 
     public IndexModel(ILogger<IndexModel> logger)
