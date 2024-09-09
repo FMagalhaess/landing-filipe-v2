@@ -94,6 +94,8 @@ body {
   height: 300px;
   width: 300px;
   border-radius: 5px;
+  object-fit: cover;
+  object-position: -10px center;
 }
 
 .titulo-projeto {

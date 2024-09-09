@@ -7,8 +7,15 @@ public class ProjetosServices {
                 Id = 1,
                 Nome = "Projeto 1",
                 Descricao = "Descrição do projeto 1",
-                Imagem = "https://via.placeholder.com/300",
-                PrincipalStacks = new List<string> { "Javascript", "TypeScript", "C#" },
+                Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
+                PrincipalStacks = new List<string> { "Javascript", "Git", "C#" },
+            },
+            new Projeto {
+                Id = 2,
+                Nome = "Projeto 2",
+                Descricao = "Descrição do projeto 2",
+                Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
+                PrincipalStacks = new List<string> { "Typescript", "SqlServer", "Python" },
             },
         };
     List<ProjetoPronto> projetosConvertidos = new List<ProjetoPronto>();

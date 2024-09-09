@@ -11,7 +11,7 @@ public class IconServices{
         },
         new Icon{
             Id = 2,
-            Name = "TypeScript",
+            Name = "Typescript",
             Url = $"https://img.icons8.com/?size={size}&id=uJM6fQYqDaZK&format=png&color=000000"
         },
         new Icon{
