@@ -17,6 +17,14 @@ public class ProjetosServices {
                 Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
                 PrincipalStacks = new List<string> { "Typescript", "SqlServer", "Python" },
             },
+            new Projeto{
+                Id = 3,
+                Nome = "atque",
+                Descricao = "Landing",
+                Imagem = "https://placehold.co/600",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+
+            }
         };
     List<ProjetoPronto> projetosConvertidos = new List<ProjetoPronto>();
     public List<ProjetoPronto> GetProjetos() {

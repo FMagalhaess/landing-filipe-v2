@@ -26,12 +26,12 @@ public class IconServices{
         },
         new Icon{
             Id = 5,
-            Name = "html",
+            Name = "Html",
             Url = $"https://img.icons8.com/?size={size}&id=20909&format=png&color=000000"
         },
         new Icon{
             Id = 6,
-            Name = "css",
+            Name = "Css",
             Url = $"https://img.icons8.com/?size={size}&id=21278&format=png&color=000000"
         },
         new Icon{
