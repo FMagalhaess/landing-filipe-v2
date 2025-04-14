@@ -44,6 +44,30 @@ public class IconServices{
             Name = "Git",
             Url = $"https://img.icons8.com/?size={size}&id=20906&format=png&color=000000",
         },
+        new Icon()
+        {
+            Id = 9,
+            Name = "PHP",
+            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+        },
+        new Icon()
+        {
+            Id = 10,
+            Name = "PHP",
+            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+        },
+        new Icon()
+        {
+            Id = 11,
+            Name = "PHP",
+            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+        },
+        new Icon()
+        {
+            Id = 12,
+            Name = "PHP",
+            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+        },
     };
     public List<Icon> GetIcons(){
         return IconList;
