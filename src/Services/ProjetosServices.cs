@@ -31,7 +31,7 @@ public class ProjetosServices
                 Id = 3,
                 Nome = "atque",
                 Descricao = "Landing",
-                Imagem = "https://placehold.co/60",
+                Imagem = "https://placehold.co/6000/png",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
 
             }

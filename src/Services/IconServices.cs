@@ -53,14 +53,14 @@ public class IconServices{
         new Icon()
         {
             Id = 10,
-            Name = "PHP",
-            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+            Name = "Docker",
+            Url = $"https://img.icons8.com/?size={size}&id=22813&format=png&color=000000"
         },
         new Icon()
         {
             Id = 11,
-            Name = "PHP",
-            Url = $"https://img.icons8.com/?size={size}&id=JybIpZjjXT0F&format=png&color=000000"
+            Name = ".NET",
+            Url = $"https://img.icons8.com/?size={size}&id=1BC75jFEBED6&format=png&color=000000"
         },
         new Icon()
         {
