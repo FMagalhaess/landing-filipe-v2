@@ -11,15 +11,15 @@
     }
 </style>
 <body>    
-<center class="p-0 container-fluid center" style="width: 100%;">
-    <section class="container-fluid d-inline-flex flex-wrap justify-content-around align-items-center p-0" style="height: 85vh;">
+<center class="p-0 container-fluid center">
+    <section class="section-apresentar container-fluid d-inline-flex flex-wrap justify-content-around align-items-center p-0" style="">
         <container-texts class="apresentacao">
             <texts class=" fonte-cor-secundaria text-center">
                 <h1 class="display-4">Olá mundo, me chamo</h1>
                 <h1 class="display-4 fonte-cor-primaria">Filipe Magalhães</h1>
                 <h2>Desenvolvedor Back-End</h2>
             </texts>
-            <icons style="width: 200px;" class="d-flex justify-content-around">
+            <icons class="d-flex justify-content-around icones-sociais">
                 <a href="https://github.com/FMagalhaess" target="_blank" class="text-white">
                     <span class="bi--github"></span>
                 </a>
@@ -58,21 +58,21 @@
     </section>
     <div class="habilidades">
         <div class="d-flex flex-column align-items-center">
-            <h2 class="fonte-cor-primaria titulo-seccion">Habilidades</h2>
+            <h2 id="hard-skills" class="fonte-cor-primaria titulo-seccion">Hard-skills</h2>
         </div>
         <div class="stacks d-flex flex-wrap justify-content-center">
             @foreach (var stack in Model.Stacks)
             {
                 <div class="d-flex flex-column skill-stack justify-content-between">
-                    <div class="" style="height: 100%; width: 100%">
-                        <img class="" style="height: 80px; width: 80px; margin-top: 10px" src=@stack.Url>
+                    <div class="stack-habilidades">
+                        <img class="imagem-stack-hard-skill" src=@stack.Url>
                         <p class="m-0 align-self-baseline"> @stack.Name </p>
                     </div>
                 </div>
             }
         </div>
     </div>
-    <section class="d-flex flex-wrap flex-column justify-content-around align-items-center p-0" style="margin-top: 13vh; width: 90%">
+    <section class="d-flex flex-wrap flex-column justify-content-around align-items-center p-0" style="margin-top: 8vh; width: 90%">
         <div class="d-flex flex-column align-items-center">
             <h2 id="Projects" class="fonte-cor-primaria titulo-seccion">Projetos</h2><br/>
         </div>
@@ -83,17 +83,17 @@
         <div class="d-flex card-projeto">
         <projeto class="d-flex flex-column align-items-center justify-content-center projeto">
             <img class="projeto-thumb" src="@projeto.Imagem" alt="">
-            <div class="stacks-principais d-flex justify-content-around">
+            <div class="stacks-principais d-flex justify-content-between ">
                 <div class="stack-holder">
-                    <img class="stack" src="@projeto.PrincipalStacks[0].Url" alt="">
+                    <img class="stack-projeto" src="@projeto.PrincipalStacks[0].Url" alt="">
                     <p>@projeto.PrincipalStacks[0].Name</p>
                 </div>
                 <div class="stack-holder">
-                    <img class="stack" src="@projeto.PrincipalStacks[1].Url" alt="">
+                    <img class="stack-projeto" src="@projeto.PrincipalStacks[1].Url" alt="">
                     <p>@projeto.PrincipalStacks[1].Name</p>
                 </div>
                 <div class="stack-holder">
-                    <img class="stack" src="@projeto.PrincipalStacks[2].Url" alt="">
+                    <img class="stack-projeto" src="@projeto.PrincipalStacks[2].Url" alt="">
                     <p>@projeto.PrincipalStacks[2].Name</p>
                 </div>
             </div>

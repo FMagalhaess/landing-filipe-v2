@@ -6,39 +6,50 @@
     <title>@ViewData["Title"]</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="~/favicon3.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <header class="d-flex cabecalho">
-        <nav class="w-100 navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
-            <div class="container-fluid ms-1 me-1">
-                <div>
+<header class="d-flex cabecalho">
+    <nav class="w-100 navbar navbar-expand-md navbar-toggleable-md box-shadow mb-3">
+        <div class="container-fluid ms-1 me-1">
+            <div class="d-none d-md-block">
                 <a class="navbar-brand fonte-cor-secundaria navbar-font-size m-0" asp-area="" asp-page="/Index">Filipe Magalhães,</a>
                 <a class="navbar-brand fonte-cor-secundaria fonte-pequena" asp-area="" asp-page="/Index">desenvolvedor Back-End</a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="fonte-media kreon">
-                    <ul class="navbar-nav fonte-cor-secundaria">
-                        <li class="nav-item">
-                            <a class="nav-link nav-bar-item" asp-area="" asp-page="/Index" asp-fragment="About">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-bar-item" asp-area="" asp-page="/Index" asp-fragment="Projects">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-bar-item" asp-area="" asp-page="/Privacy">Minhas Stacks</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
-    <div class="container-fluid p-0 m-0">
+
+            <div class="d-md-none">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                    <img src="~/Logo.png" alt="Logo Filipe Magalhães" class="logo" />
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu que colapsa -->
+            <div class="collapse navbar-collapse fonte-media kreon justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fonte-cor-secundaria">
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-item" asp-area="" asp-page="/Index" asp-fragment="About">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-item" asp-area="" asp-page="/Index" asp-fragment="Projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-bar-item" asp-area="" asp-page="/Index" asp-fragment="hard-skills">Minhas Stacks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid p-0 m-0">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -52,6 +63,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

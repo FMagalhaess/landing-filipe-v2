@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\developer.jpeg" />
+    <None Include="wwwroot\Logo.png" />
   </ItemGroup>
 
 </Project>

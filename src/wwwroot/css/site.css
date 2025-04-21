@@ -33,11 +33,11 @@
 
 
 .kreon {
-          font-family: "Kreon", serif;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-        }
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 @font-face {
@@ -166,8 +166,30 @@ html {
   rotate: 180deg;
 }
 
+.icones-sociais{
+  width: 35%;
+  margin-top: 1.5rem;
+}
+
+.imagem-stack-hard-skill{
+  margin-top: 10px;
+}
+
+.links-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 60px;
+}
+
 .navbar-font-size{
   font-size: var(--fonte-grande) !important;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-bar-item{
@@ -175,7 +197,7 @@ html {
 }
 
 .projeto {
-  height: 30rem;
+  height: auto;
   width: 22rem;
   flex-shrink: 0;
   background-color: var(--project-color);
@@ -212,6 +234,10 @@ html {
   font-size: var(--fonte-grande);
 }
 
+.section-apresentar{
+  height: 85vh;
+}
+
 .sobre-mim{
   width: 100%;
   padding: 10%;
@@ -219,8 +245,12 @@ html {
   margin-top: 3rem;
 }
 
-.stack {
-  height: auto;
+.stack-projeto {
+  width: 100%;
+}
+
+.stack-habilidades{
+  height: 100%; width: 100%; margin-top: 7%
 }
 
 .stack-holder {
@@ -258,7 +288,7 @@ html {
 .stacks-principais {
   margin-top: 10px;
   flex-wrap: wrap;
-  width: 100%;
+  width: 85%;
 }
 
 .texto-sobre-mim{
@@ -316,5 +346,20 @@ html {
   
   .projeto-thumb{
     margin-top: 1.5rem;
+  }
+  
+  .sobre-mim{
+    margin-top: 6rem;
+  }
+  .apresentacao{
+    width: 100%;
+  }
+  .foto{
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+    height: 50vh;
+  }
+  .habilidades{
+    margin-top: 1rem;
   }
 }
