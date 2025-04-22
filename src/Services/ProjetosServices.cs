@@ -48,14 +48,14 @@ public class ProjetosServices
                 Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
                 PrincipalStacks = new List<string> { "C#", ".NET", "Flutter" },
             },
-            new Projeto{
-                Id = 3,
-                Nome = "atque",
-                Descricao = loren,
-                Imagem = "https://placehold.co/6000/png",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
-
-            }
+            // new Projeto{
+            //     Id = 3,
+            //     Nome = "atque",
+            //     Descricao = loren,
+            //     Imagem = "https://placehold.co/6000/png",
+            //     PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            //
+            // }
         };
     List<ProjetoPronto> projetosConvertidos = new List<ProjetoPronto>();
     public List<ProjetoPronto> GetProjetos() {

@@ -184,6 +184,10 @@ html {
   height: 60px;
 }
 
+.logo-principal{
+  height: 85%;
+}
+
 .navbar-font-size{
   font-size: var(--fonte-grande) !important;
 }
@@ -341,7 +345,7 @@ html {
   
   .projeto{
     height: auto;
-    width: 85%;
+    width: 50%;
   }
   
   .projeto-thumb{
@@ -355,11 +359,14 @@ html {
     width: 100%;
   }
   .foto{
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 4.5rem;
     height: 50vh;
   }
   .habilidades{
     margin-top: 1rem;
+  }
+  .titulo-projeto{
+    margin-top: 10%;
   }
 }
