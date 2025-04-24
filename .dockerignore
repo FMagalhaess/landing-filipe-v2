@@ -1,0 +1,13 @@
+# Pastas de build locais
+src/bin/
+src/obj/
+
+# IDE/configurações
+.vs/
+.idea/
+*.user
+*.suo
+*.md
+
+# Arquivos de publicação locais
+**/publish/
