@@ -18,12 +18,16 @@ public class ProjetosServices
                                                    "de manutenção, entre outros são comprados indo diretamente na loja," +
                                                    " mas isso gera um problema para aqueles que tem menos tempo e/ou " +
                                                    "disponibilidade para sair de casa. Foi pensando nisso que em" +
-                                                   " dupla com um amigo da mesma  cidade que eu, iniciamos o" +
+                                                   " dupla com um amigo, iniciamos o " +
                                                    "desenvolvimento do aplicativo ainda sem nome. Um marketplace " +
                                                    "que visa ser uma versão do mercado livre voltada para cidades " +
                                                    "menores, onde se compra da mesma cidade onde está o comprador, " +
                                                    "movimentando assim o mercado local. Utilizamos PHP Laravel para o " +
-                                                   "back-end, para o desenvolvimento mobile optamos por Flutter. Atualmente estamos desenvolvendo as telas em flutter.\n";
+                                                   "back-end, para o desenvolvimento mobile optamos por Flutter." +
+                                                   " Atualmente estamos desenvolvendo as telas em flutter." +
+                                                   "Conceitos aplicados: Autorização e autênticação, Testes de ponta a" +
+                                                   " ponta, metodologia ágil, consumo de API externa para ser integrada " +
+                                                   "dentro do back-end, normalização de dados.\n";
 
     private static readonly string CalculadoraDesc = "Quando eu era dono de uma hamburgueria a coisa que eu mais tinha" +
                                                      " dificuldade era precificar o meu lanche, conversando" +
@@ -31,8 +35,10 @@ public class ProjetosServices
                                                      " problema que não era apenas meu, com isso decidi desenvolver" +
                                                      " uma calculadora que ajudaria eles com isso. Esse projeto ainda" +
                                                      " encontra-se em desenvolvimento, uso C# .NET para o back-end e" +
-                                                     " planejo utilizar Flutter para o front mobile e react para o" +
-                                                     " front WEB";
+                                                     " planejo utilizar Flutter para o front mobile e React para o" +
+                                                     " front WEB.\n" +
+                                                     "Conteitos aplicados: Arquitetura MVSC (model, view, service, controller)" +
+                                                     ", principios SOLID";
     List<Projeto> projetos = new List<Projeto> {
             new Projeto {
                 Id = 1,
