@@ -175,6 +175,11 @@ html {
   margin-top: 10px;
 }
 
+.link-util{
+  background-color: #535353;
+  margin-bottom: 2%;
+}
+
 .links-nav{
   display: flex;
   justify-content: space-between;
@@ -215,7 +220,7 @@ html {
   aspect-ratio: 1 / 1;
   border-radius: 5px;
   object-fit: cover;
-  object-position: center;
+  object-position: left;
 }
 
 .fonte-cor-primaria {
@@ -250,7 +255,7 @@ html {
 }
 
 .stack-projeto {
-  width: 100%;
+  width: 85%;
 }
 
 .stack-habilidades{
@@ -290,7 +295,7 @@ html {
 }
 
 .stacks-principais {
-  margin-top: 10px;
+  /*margin-top: 2%;*/
   flex-wrap: wrap;
   width: 85%;
 }

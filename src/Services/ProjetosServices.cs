@@ -52,16 +52,58 @@ public class ProjetosServices
                 Nome = "Calculadora de custos para lanchonetes",
                 Descricao = CalculadoraDesc,
                 Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
+                LinkUtil = "https://github.com/FMagalhaess/calculadora-custos",
+                DeployLink = "",
                 PrincipalStacks = new List<string> { "C#", ".NET", "Flutter" },
             },
-            // new Projeto{
-            //     Id = 3,
-            //     Nome = "atque",
-            //     Descricao = loren,
-            //     Imagem = "https://placehold.co/6000/png",
-            //     PrincipalStacks = new List<string> { "Html", "C#", "Css" },
-            //
-            // }
+            new Projeto{
+                Id = 3,
+                Nome = "Controle de finanças pessoais",
+                Descricao = loren,
+                Imagem = "https://placehold.co/6000/png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
+            new Projeto{
+                Id = 4,
+                Nome = "Contator de game-over em games",
+                Descricao = loren,
+                Imagem = "https://placehold.co/6000/png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
+            new Projeto{
+                Id = 5,
+                Nome = "Api site de receitas",
+                Descricao = loren,
+                Imagem = "https://placehold.co/6000/png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
+            new Projeto{
+                Id = 6,
+                Nome = "Sistema de apostas esportivas",
+                Descricao = loren,
+                Imagem = "https://placehold.co/6000/png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
+            new Projeto{
+                Id = 7,
+                Nome = "Organizador para jogadores de pokémon",
+                Descricao = loren,
+                Imagem = "https://placehold.co/6000/png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
+            new Projeto{
+                Id = 8,
+                Nome = "Portfólio",
+                Descricao = loren,
+                Imagem = "/images/PrintPortfolioQuadrada.png",
+                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            
+            },
         };
     List<ProjetoPronto> projetosConvertidos = new List<ProjetoPronto>();
     public List<ProjetoPronto> GetProjetos() {
@@ -73,6 +115,8 @@ public class ProjetosServices
                 Nome = projeto.Nome,
                 Descricao = projeto.Descricao,
                 Imagem = projeto.Imagem,
+                LinkUtil = projeto.LinkUtil,
+                DeployLink = projeto.DeployLink,
                 PrincipalStacks = new List<Icon>(),
             };
             foreach (var stack in projeto.PrincipalStacks)

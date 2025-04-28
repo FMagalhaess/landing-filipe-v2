@@ -6,6 +6,8 @@ namespace Model
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public string Imagem { get; set; }
+        public string LinkUtil { get; set; }
+        public string DeployLink { get; set; }
         public List<String> PrincipalStacks { get; set; }
         public List<Icon> NormalStacks { get; set; }
     }
@@ -15,6 +17,8 @@ namespace Model
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public string Imagem { get; set; }
+        public string LinkUtil { get; set; }
+        public string DeployLink { get; set; }
         public List<Icon> PrincipalStacks { get; set; }
         public List<Icon> NormalStacks { get; set; }
     }
