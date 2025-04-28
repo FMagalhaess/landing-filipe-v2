@@ -39,6 +39,42 @@ public class ProjetosServices
                                                      " front WEB.\n" +
                                                      "Conteitos aplicados: Arquitetura MVSC (model, view, service, controller)" +
                                                      ", principios SOLID";
+
+    private static readonly string OrganizadoraDeGastos = "Durante os meus estudos com o 12x Microsoft MVP, André Baltieri, " +
+                                                          "tive como projeto foco esse organizador de finanças pessoais " +
+                                                          "feito em C#, com Front usando ASP.NET.";
+
+    private static readonly string ContadorMortes = "Durante um dia de descanso enquanto jogava Elden Ring, jogo famoso " +
+                                                    "por ser extremamente difícil onde morremos inúmeras vezes, decidi " +
+                                                    "baixar um app para contar quantas vezes eu morri, buscando na " +
+                                                    "playstore algo assim e vendo a deficiência que existia nisso, " +
+                                                    "decidi por fazer meu próprio app para isso, a ideia era simples: " +
+                                                    "1- rodar em android e ios (para isso utilizei Kotlin multiplataforma). " +
+                                                    "2- Ser simples, afinal o usuário alvo iria utilizar muitas vezes por " +
+                                                    "hora. 3- Conseguir manter salvo esse progresso e o progresso em " +
+                                                    "outros jogos. Esse foi meu primeiro contato com a linguagem kotlin. " +
+                                                    "Versionei ele utilizando Git e hospedando no GitHub.";
+    private static readonly string ApiReceitas = "Na minha jornada na trybe utilizamos uma api para treinar consumo " +
+                                                 "no front-end com a proposta de ser um app de receitar, no " +
+                                                 "módulo de estudos em C# tivemos que montar do zero essa " +
+                                                 "api que usamos antes.";
+    private static readonly string SistemaApostas = "";
+    private static readonly string OrganizadorShinyHunter= "Para resolver uma deficiência específica na comunidade de " +
+                                                           "quem joga pokemon resolvi fazer esse projeto que visa " +
+                                                           "facilitar a vida dessa parcela da população, o projeto " +
+                                                           "consiste em um agregador de informações de onde e como " +
+                                                           "conseguir acesso a certos itens, onde será mais fácil " +
+                                                           "capturar certos bichinhos, qual melhor estratégia para " +
+                                                           "isso e algumas ferramentas que facilitaram a organização. " +
+                                                           "Utilizei C# para o back-end, planejo utilizar Flutter para " +
+                                                           "versões android e ios e também integrar com o StremLabs " +
+                                                           "para ser usado por streamers.\n";
+    private static readonly string PortfolioDesc= "Meu portfólio pessoal, feito em C#, utilizando ASP.NET para o " +
+                                                  "front, a ideia sempre foi algo mais automatizado, onde mesmo sem " +
+                                                  "uso de uma api eu conseguisse colocar meus projetos de maneira " +
+                                                  "centralizada e organizada onde ele voltaria para o front já " +
+                                                  "formatado com o CSS. Fiz de maneira que facilita a adição de " +
+                                                  "novos projetos e stacks.\n";
     List<Projeto> projetos = new List<Projeto> {
             new Projeto {
                 Id = 1,
@@ -59,47 +95,52 @@ public class ProjetosServices
             new Projeto{
                 Id = 3,
                 Nome = "Controle de finanças pessoais",
-                Descricao = loren,
+                Descricao = OrganizadoraDeGastos,
                 Imagem = "https://placehold.co/6000/png",
+                LinkUtil = "https://github.com/FMagalhaess/Controle-de-financas",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
             new Projeto{
                 Id = 4,
                 Nome = "Contator de game-over em games",
-                Descricao = loren,
+                Descricao = ContadorMortes,
                 Imagem = "https://placehold.co/6000/png",
+                LinkUtil = "https://github.com/FMagalhaess/DeathCounterAppv2",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
             new Projeto{
                 Id = 5,
                 Nome = "Api site de receitas",
-                Descricao = loren,
+                Descricao = ApiReceitas,
                 Imagem = "https://placehold.co/6000/png",
+                LinkUtil = "https://github.com/FMagalhaess/api-app-de-receitas",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
             new Projeto{
                 Id = 6,
                 Nome = "Sistema de apostas esportivas",
-                Descricao = loren,
+                Descricao = SistemaApostas,
                 Imagem = "https://placehold.co/6000/png",
+                LinkUtil = "https://github.com/FMagalhaess/sistema-apostas",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
             new Projeto{
                 Id = 7,
                 Nome = "Organizador para jogadores de pokémon",
-                Descricao = loren,
+                Descricao = OrganizadorShinyHunter,
                 Imagem = "https://placehold.co/6000/png",
+                LinkUtil = "https://github.com/FMagalhaess/shiny-hunt-C-",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
             new Projeto{
                 Id = 8,
                 Nome = "Portfólio",
-                Descricao = loren,
+                Descricao = PortfolioDesc,
                 Imagem = "/images/PrintPortfolioQuadrada.png",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
