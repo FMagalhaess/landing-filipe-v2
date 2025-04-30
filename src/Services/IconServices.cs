@@ -86,6 +86,12 @@ public class IconServices{
             Name = "Flutter",
             Url = $"https://img.icons8.com/?size={size}&id=5pu47piHKg1I&format=png&color=000000"
         },
+        new Icon()
+        {
+          Id  = 16,
+          Name = "Kotlin",
+          Url = $"https://img.icons8.com/?size={size}&id=ZoxjA0jZDdFZ&format=png&color=000000"
+        },
         
     };
     public List<Icon> GetIcons(){

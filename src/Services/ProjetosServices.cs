@@ -55,7 +55,7 @@ public class ProjetosServices
                                                     "outros jogos. Esse foi meu primeiro contato com a linguagem kotlin. " +
                                                     "Versionei ele utilizando Git e hospedando no GitHub.";
     private static readonly string ApiReceitas = "Na minha jornada na trybe utilizamos uma api para treinar consumo " +
-                                                 "no front-end com a proposta de ser um app de receitar, no " +
+                                                 "no front-end com a proposta de ser um app de receitas, no " +
                                                  "módulo de estudos em C# tivemos que montar do zero essa " +
                                                  "api que usamos antes.";
     private static readonly string SistemaApostas = "";
@@ -68,7 +68,7 @@ public class ProjetosServices
                                                            "isso e algumas ferramentas que facilitaram a organização. " +
                                                            "Utilizei C# para o back-end, planejo utilizar Flutter para " +
                                                            "versões android e ios e também integrar com o StremLabs " +
-                                                           "para ser usado por streamers.\n";
+                                                           "para ser usado por streamers. \n";
     private static readonly string PortfolioDesc= "Meu portfólio pessoal, feito em C#, utilizando ASP.NET para o " +
                                                   "front, a ideia sempre foi algo mais automatizado, onde mesmo sem " +
                                                   "uso de uma api eu conseguisse colocar meus projetos de maneira " +
@@ -80,63 +80,64 @@ public class ProjetosServices
                 Id = 1,
                 Nome = "Marketplace com laravel",
                 Descricao = MarketPlaceDescription,
-                Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
+                Imagem = "/images/marketplace.png",
+                LinkUtil = "https://drive.google.com/file/d/1tYjWYeMCgnN-Tjej5zeNooZ0YYym1wjZ/view?usp=drive_link",
                 PrincipalStacks = new List<string> { "Laravel", "Flutter", "Git" },
             },
             new Projeto {
                 Id = 2,
                 Nome = "Calculadora de custos para lanchonetes",
                 Descricao = CalculadoraDesc,
-                Imagem = "https://i.postimg.cc/MTSWSvGF/Captura-de-tela-de-2024-09-09-10-48-27.png",
+                Imagem = "/images/CalculadoraCustos.png",
                 LinkUtil = "https://github.com/FMagalhaess/calculadora-custos",
                 DeployLink = "",
-                PrincipalStacks = new List<string> { "C#", ".NET", "Flutter" },
+                PrincipalStacks = new List<string> { "C#", ".NET", "Git" },
             },
             new Projeto{
-                Id = 3,
-                Nome = "Controle de finanças pessoais",
-                Descricao = OrganizadoraDeGastos,
-                Imagem = "https://placehold.co/6000/png",
-                LinkUtil = "https://github.com/FMagalhaess/Controle-de-financas",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+                Id = 7,
+                Nome = "Organizador para jogadores de pokémon",
+                Descricao = OrganizadorShinyHunter,
+                Imagem = "/images/Pokeball.png",
+                LinkUtil = "https://github.com/FMagalhaess/shiny-hunt-C-",
+                PrincipalStacks = new List<string> { ".NET", "C#", "Flutter" },
             
             },
+            // new Projeto{
+            //     Id = 3,
+            //     Nome = "Controle de finanças pessoais",
+            //     Descricao = OrganizadoraDeGastos,
+            //     Imagem = "https://placehold.co/6000/png",
+            //     LinkUtil = "https://github.com/FMagalhaess/Controle-de-financas",
+            //     PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+            //
+            // },
             new Projeto{
                 Id = 4,
                 Nome = "Contator de game-over em games",
                 Descricao = ContadorMortes,
-                Imagem = "https://placehold.co/6000/png",
+                Imagem = "/images/ContadorMortes.png",
                 LinkUtil = "https://github.com/FMagalhaess/DeathCounterAppv2",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+                PrincipalStacks = new List<string> { "Kotlin", "Git", "SqlServer" },
             
             },
             new Projeto{
                 Id = 5,
                 Nome = "Api site de receitas",
                 Descricao = ApiReceitas,
-                Imagem = "https://placehold.co/6000/png",
+                Imagem = "/images/Receitas.jpg",
                 LinkUtil = "https://github.com/FMagalhaess/api-app-de-receitas",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
+                PrincipalStacks = new List<string> { ".NET", "C#", "Javascript" },
             
             },
-            new Projeto{
-                Id = 6,
-                Nome = "Sistema de apostas esportivas",
-                Descricao = SistemaApostas,
-                Imagem = "https://placehold.co/6000/png",
-                LinkUtil = "https://github.com/FMagalhaess/sistema-apostas",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
-            
-            },
-            new Projeto{
-                Id = 7,
-                Nome = "Organizador para jogadores de pokémon",
-                Descricao = OrganizadorShinyHunter,
-                Imagem = "https://placehold.co/6000/png",
-                LinkUtil = "https://github.com/FMagalhaess/shiny-hunt-C-",
-                PrincipalStacks = new List<string> { "Html", "C#", "Css" },
-            
-            },
+            // new Projeto{
+            //     Id = 6,
+            //     Nome = "Sistema de apostas esportivas",
+            //     Descricao = SistemaApostas,
+            //     Imagem = "https://placehold.co/6000/png",
+            //     LinkUtil = "https://github.com/FMagalhaess/sistema-apostas",
+            //     PrincipalStacks = new List<string> { "Docker", "C#", "Css" },
+            //
+            // },
             new Projeto{
                 Id = 8,
                 Nome = "Portfólio",
