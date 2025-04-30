@@ -6,9 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<!--  <ItemGroup>-->
+<!--    <None Include="wwwroot\developer.jpeg" />-->
+<!--    <None Include="wwwroot\Logo.png" />-->
+<!--  </ItemGroup>-->
   <ItemGroup>
-    <None Include="wwwroot\developer.jpeg" />
-    <None Include="wwwroot\Logo.png" />
+    <None Include="wwwroot\**\*" CopyToPublishDirectory="Always" />
   </ItemGroup>
+
 
 </Project>
