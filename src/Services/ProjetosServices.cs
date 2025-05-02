@@ -80,7 +80,7 @@ public class ProjetosServices
                 Id = 1,
                 Nome = "Marketplace com laravel",
                 Descricao = MarketPlaceDescription,
-                Imagem = "/images/marketplace.png",
+                Imagem = "/Images/marketplace.png",
                 LinkUtil = "https://drive.google.com/file/d/1tYjWYeMCgnN-Tjej5zeNooZ0YYym1wjZ/view?usp=drive_link",
                 PrincipalStacks = new List<string> { "Laravel", "Flutter", "Git" },
             },
@@ -88,7 +88,7 @@ public class ProjetosServices
                 Id = 2,
                 Nome = "Calculadora de custos para lanchonetes",
                 Descricao = CalculadoraDesc,
-                Imagem = "/images/CalculadoraCustos.png",
+                Imagem = "/Images/CalculadoraCustos.png",
                 LinkUtil = "https://github.com/FMagalhaess/calculadora-custos",
                 DeployLink = "",
                 PrincipalStacks = new List<string> { "C#", ".NET", "Git" },
@@ -97,7 +97,7 @@ public class ProjetosServices
                 Id = 7,
                 Nome = "Organizador para jogadores de pokémon",
                 Descricao = OrganizadorShinyHunter,
-                Imagem = "/images/Pokeball.png",
+                Imagem = "/Images/Pokeball.png",
                 LinkUtil = "https://github.com/FMagalhaess/shiny-hunt-C-",
                 PrincipalStacks = new List<string> { ".NET", "C#", "Flutter" },
             
@@ -113,9 +113,9 @@ public class ProjetosServices
             // },
             new Projeto{
                 Id = 4,
-                Nome = "Contator de game-over em games",
+                Nome = "Contador de game-over em games",
                 Descricao = ContadorMortes,
-                Imagem = "/images/ContadorMortes.png",
+                Imagem = "/Images/ContadorMortes.png",
                 LinkUtil = "https://github.com/FMagalhaess/DeathCounterAppv2",
                 PrincipalStacks = new List<string> { "Kotlin", "Git", "SqlServer" },
             
@@ -124,7 +124,7 @@ public class ProjetosServices
                 Id = 5,
                 Nome = "Api site de receitas",
                 Descricao = ApiReceitas,
-                Imagem = "/images/Receitas.jpg",
+                Imagem = "/Images/Receitas.jpg",
                 LinkUtil = "https://github.com/FMagalhaess/api-app-de-receitas",
                 PrincipalStacks = new List<string> { ".NET", "C#", "Javascript" },
             
@@ -142,7 +142,7 @@ public class ProjetosServices
                 Id = 8,
                 Nome = "Portfólio",
                 Descricao = PortfolioDesc,
-                Imagem = "/images/PrintPortfolioQuadrada.png",
+                Imagem = "/Images/PrintPortfolioQuadrada.png",
                 PrincipalStacks = new List<string> { "Html", "C#", "Css" },
             
             },
