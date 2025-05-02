@@ -29,16 +29,19 @@ public class ProjetosServices
                                                    " ponta, metodologia ágil, consumo de API externa para ser integrada " +
                                                    "dentro do back-end, normalização de dados.\n";
 
-    private static readonly string CalculadoraDesc = "Quando eu era dono de uma hamburgueria a coisa que eu mais tinha" +
-                                                     " dificuldade era precificar o meu lanche, conversando" +
-                                                     " com outros amigos donos de lanchonetes, percebi que é um" +
-                                                     " problema que não era apenas meu, com isso decidi desenvolver" +
-                                                     " uma calculadora que ajudaria eles com isso. Esse projeto ainda" +
-                                                     " encontra-se em desenvolvimento, uso C# .NET para o back-end e" +
-                                                     " planejo utilizar Flutter para o front mobile e React para o" +
-                                                     " front WEB.\n" +
-                                                     "Conteitos aplicados: Arquitetura MVSC (model, view, service, controller)" +
-                                                     ", principios SOLID";
+    private static readonly string CalculadoraDesc = "Quando eu era dono de uma hamburgueria a coisa que eu mais" +
+                                                     " tinha dificuldade era precificar o meu lanche, conversando " +
+                                                     "com outros amigos donos de lanchonetes, percebi que é um " +
+                                                     "problema que não era apenas meu, com isso decidi desenvolver " +
+                                                     "uma calculadora que ajudaria eles com isso. A ideia é que os " +
+                                                     "proprietários de lanchonetes no geral conseguem cadastrar todos " +
+                                                     "os seus insumos, cadastrar seus custos fixos e variáveis, " +
+                                                     "salvar receitas para facilitar revisão e com isso tudo o " +
+                                                     "serviço irá calcular para ele um range de valores que ele " +
+                                                     "possa cobrar, mostrando também a porcentagem de seu lucro e " +
+                                                     "qual o saldo final. Esse projeto ainda encontra-se em " +
+                                                     "desenvolvimento, uso C# .NET para o back-end e planejo " +
+                                                     "utilizar Flutter para o front mobile e react para o front WEB";
 
     private static readonly string OrganizadoraDeGastos = "Durante os meus estudos com o 12x Microsoft MVP, André Baltieri, " +
                                                           "tive como projeto foco esse organizador de finanças pessoais " +
