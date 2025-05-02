@@ -20,16 +20,24 @@
                 <h2>Desenvolvedor Back-End</h2>
             </texts>
             <icons class="d-flex justify-content-around icones-sociais">
-                <a href="https://github.com/FMagalhaess" target="_blank" class="text-white">
-                    <span class="bi--github"></span>
+                <a href="https://api.whatsapp.com/send?phone=5575999670716" target="_blank">
+                    <div class="whatsapp icone"></div>
                 </a>
-                <a>
-                    <div class="whatsapp"></div>
+                @* <a href="mailto:7filipe093@gmail.com"> *@
+                @*     <div class="email icone"></div> *@
+                @* </a> *@
+                <a href="https://github.com/FMagalhaess" target="_blank" class="text-white">
+                    <span class="bi--github icone"></span>
                 </a>
                 <a href="https://www.linkedin.com/in/filipemagalhaesdev/" target="_blank" class="text-white">
-                    <span class="bi--linkedin"></span>
+                    <span class="bi--linkedin icone"></span>
                 </a>
             </icons>
+            <curriculo>
+                <a href="https://docs.google.com/document/d/1feaA1sg_pCknVK4cWS0MwRF2GPiJ5WO2S06aMuiMoeA/export?format=pdf" target="_blank">
+                    <span class="btn btn-primary rounded-pill curriculo"> Baixar CV</span>
+                </a>
+            </curriculo>
         </container-texts>
         <div>
             @* <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/123377601?v=4" *@
@@ -41,7 +49,7 @@
         </div>
         <container class="align-self-end" style="width: 2200px">
             <span class="container-circle circle-with-arrows d-flex flex-column flex-wrap fundo-cor-primaria circle" >
-                <span class="iconamoon--arrow-up-2"></span>
+                <span class="iconamoon--arrow-up-2 icone"></span>
             </span>
         </container>
     </section>
@@ -77,7 +85,7 @@
     </div>
     <section class="d-flex flex-wrap flex-column justify-content-around align-items-center p-0" style="margin-top: 8vh; width: 90%">
         <div class="d-flex flex-column align-items-center">
-            <h2 id="Projects" class="fonte-cor-primaria titulo-seccion">Projetos</h2><br/>
+            <h2 id="Projects" class="fonte-cor-primaria titulo-seccion">Projetos back-end</h2><br/>
         </div>
         @* <div class="d-flex" style="width: 100vh;"> *@
         <projetos-totais class="d-flex flex-wrap conjunto-projetos">
@@ -104,7 +112,7 @@
         </projeto>
         <content class="d-flex flex-column holder-desc-tittle ">
             <p class="align-self-center fonte-cor-secundaria titulo-projeto">@projeto.Nome</p>
-            <p class="align-self-start descricao-projeto">@projeto.Descricao</p>
+            <p class="align-self-start descricao-projeto">@Html.Raw(projeto.Descricao)</p>
         </content>
         </div>
 
